@@ -1,0 +1,31 @@
+.info{
+color: rgb(4, 0, 255);
+background-color: rgba(254, 129, 129, 0.82);
+/*text-decoration: underline;*/
+/*text-decoration: wavy underline;*/
+/*text-decoration: dotted underline;*/
+/*text-decoration: dotted line-through;*/
+/*text-decoration: overline;*/
+/*text-decoration: line-through;*/
+text-decoration: wavy line-through 2px;
+
+
+}
+
+.demo{
+
+letter-spacing: 2px;
+word-spacing: 5px;
+-line-height: 1.5;
+font-size: 13px;
+font-family: Avant Garde, Arial , sans-serif;
+}
+.demo1{
+
+letter-spacing: 2px;
+line-height: 2;
+font-size: 10px;
+font-family: monospace;
+
+
+}

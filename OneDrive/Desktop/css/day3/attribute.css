@@ -1,0 +1,45 @@
+input[type="text"]{
+    color: red;
+    background-color: black;
+}
+input[type="password"] {
+    color: rgb(46, 179, 42);
+    background-color: rgb(207, 35, 141);
+}
+
+/*pseudo class*/
+button:hover{
+    text-transform: uppercase;
+    background-color: brown;
+    color: rgb(155, 70, 235);
+}
+button:active{
+    background-color: blue;
+    cursor: pointer;
+}
+
+h1:hover{
+    background-color: rgb(169, 107, 226);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+p:first-child{
+    background-color : pink;
+    text-decoration: underline;
+}
+p:last-child {
+    background-color: rgb(205, 6, 39);
+    text-decoration: wavy line-through rgb(99, 157, 11);
+}
+h2:hover{
+    background-color: blueviolet;
+}
+
+p:first-of-type{
+    color: rgb(7, 100, 71);
+}
+
+input[type="radio"]:checked+label {
+    background-color: chartreuse;
+    font-size: 30px; }

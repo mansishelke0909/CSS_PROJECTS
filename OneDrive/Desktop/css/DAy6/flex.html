@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* body {
+            overflow-x: hidden;
+        } */
+
+        .flex-container {
+            width: 100vw;
+            height: 100vh;
+            background-color: aquamarine;
+            border: 5px solid rgb(0, 55, 255);
+            margin-inline: auto;
+            display: flex;
+            /* flex-direction: row(default) /row-reverse;/column/column-reverse */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            
+
+        }
+
+        .item {
+            width: 50px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; margin-block: 30px;">FlexBox Playground</h1>
+    <div class="flex-container">
+        <div class="item" style="background-color: red;">One</div>
+        <div class="item" style="background-color: bisque;">Two</div>
+        <div class="item" style="background-color: violet;">Three</div>
+        <div class="item" style="background-color: azure;">Four</div>
+        <div class="item" style="background-color: blue;">Five</div>
+        <div class="item" style="background-color: tomato;">Six</div>
+        <div class="item" style="background-color: rgb(0, 255, 76);">Seven</div>
+        <div class="item" style="background-color: rgb(206, 219, 89);">Eight</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+/* 1. UNIVERSAL SELECTORS */
+* {
+    /* background-color: aqua; */
+}
+
+/* 2. TAG SELECTOR */
+h1 {
+    color: red;
+    font-size: 50px;
+}
+
+/* 3. CLASS SELECTOR */
+.demo {
+    color: purple;
+    font-size: 25px;
+}
+
+/* 4. ID SELECTOR */
+#wrapper {
+    color: yellow;
+    font-size: 35px;
+}
+
+#flex {
+    width: 50%;
+    height: 500px;
+    background-color: burlywood;
+}
+
+/* 5. Descendent Selector */
+#flex h1 {
+    color: aqua;
+}
+
+#flex .header1 {
+    color: brown;
+}
+
+#flex2 {
+    width: 50%;
+    height: 200px;
+    background-color: chartreuse;
+}
+
+/* 6. Sibling Selector (+) */
+
+h1+p {
+    background-color: red;
+}
+
+/* 7. Child Combinator (>)*/
+.external>button {
+    background-color: red; }
