@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Card Flip Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #bec1c8;
+            font-family: system-ui, sans-serif;
+        }
+
+        .card {
+            width: 260px;
+            height: 400px;
+            perspective: 1000px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s ease;
+            transform-style: preserve-3d;
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+            cursor: pointer;
+        }
+
+        .card-front,
+        .card-back {
+            position: absolute;
+            inset: 0;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: bold;
+            backface-visibility: hidden;
+        }
+
+        .card-front {
+            background-color: black;
+            color: white;
+        }
+
+        .card-back {
+            background-color: white;
+            color: black;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                HELLO!! </div>
+            <div class="card-back">
+                WELCOME TO SPRK TECH!! </div>
+        </div>
+    </div>
+</body>
+
+</html>
